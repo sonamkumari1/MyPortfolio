@@ -8,17 +8,19 @@ const achievements = [
 ];
 
 const Achievements = () => (
-  <section id="achievements" className="mb-12">
-    <h2 className="text-3xl font-bold text-center mb-8">
-      <span className="text-white">Achievements</span>
+  <section id="achievements" className="mb-20">
+    <h2 className="text-4xl text-center mb-16 font-semibold text-white">
+      Achievements
+      <div className="h-1 w-full bg-gradient-to-r from-white to-yellow-400 mx-auto mt-10 " />
     </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <ul className="space-y-4 list-disc list-inside text-gray-300 bg-[#1a1a1a] p-6 ">
       {achievements.map((item, index) => (
-        <div key={index} className="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transform transition duration-300">
-          <p className="text-gray-300">{item}</p>
-        </div>
+        <li key={index} className="hover:text-yellow-400 transition duration-200">
+          {item}
+        </li>
       ))}
-    </div>
+    </ul>
   </section>
 );
 

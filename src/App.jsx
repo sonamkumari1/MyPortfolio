@@ -10,13 +10,13 @@ import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <div className=" text-white font-[Poppins] min-h-screen px-10">
+    <div className=" text-white font-[Poppins] min-h-screen px-28">
       <Navbar />
       <main className="pt-32 px-6 sm:px-10 lg:px-20">
         <Header />
         {/* <About /> */}
-        <Skills />
         <Experience />
+        <Skills />
         <Projects />
         <Education />
         <Achievements />

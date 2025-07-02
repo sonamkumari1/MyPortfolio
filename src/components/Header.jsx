@@ -1,5 +1,11 @@
 import React, { useState } from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaPhone,
+  FaCode,
+} from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
 
 const Header = () => {
@@ -12,7 +18,7 @@ const Header = () => {
         </h1>
         <h2 className="text-xl sm:text-3xl font-semibold mt-3">
           I'm a{" "}
-          <span className="text-purple-800">
+          <span className="text-yellow-400">
             <Typewriter
               words={["Full Stack Developer"]}
               loop={false}
@@ -37,13 +43,10 @@ const Header = () => {
               label: <FaGithub />,
             },
             {
-              href: "mailto:sonamkumari63928@gmail.com",
-              label: <FaEnvelope />,
+              href: "https://leetcode.com/your-username",
+              label: <FaCode />,
             },
-            {
-              href: "tel:+916392885049",
-              label: <FaPhone />,
-            },
+
             {
               href: "https://linkedin.com",
               label: <FaLinkedin />,
@@ -54,13 +57,13 @@ const Header = () => {
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="w-12 h-12 flex items-center justify-center text-2xl bg-gray-800 rounded-full shadow-md transition duration-300 hover:text-white hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-teal-500 focus:ring-offset-2 focus:ring-offset-black animate-pulse"
+              className="w-12 h-12 flex items-center justify-center text-2xl bg-gray-800 rounded-full shadow-md transition duration-300 hover:text-white hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-black animate-pulse"
             >
               {link.label}
             </a>
           ))}
         </div>
-        <button className="mt-8 px-6 py-3 bg-purple-800 hover:bg-purple-800 rounded-lg shadow-lg text-white font-semibold transition-transform transform hover:scale-105">
+        <button className="mt-8 px-6 py-3 bg-yellow-400 hover:bg-yellow-400 rounded-4xl shadow-lg text-white font-semibold transition-transform transform hover:scale-105">
           Download CV
         </button>
       </div>
@@ -68,9 +71,9 @@ const Header = () => {
         <img
           src="/profile.jpg"
           alt="Profile"
-          className="w-[400px] h-[400px] sm:w-80 sm:h-80 object-cover rounded-full border-2 border-purple-800 
+          className="w-[400px] h-[400px] sm:w-80 sm:h-80 object-cover rounded-full border-2 border-yellow-400
                transition-transform duration-500 transform hover:scale-110 
-               shadow-[0_0_30px_10px_rgba(128,0,128,0.6)]"
+               shadow-[0_0_30px_10px_rgba(250,204,21,0.6)]"
         />
       </div>
     </header>

@@ -7,12 +7,13 @@ import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Achievements from "./components/Achievements";
 import Navbar from "./components/Navbar";
+import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div className=" text-white font-[Poppins] min-h-screen px-28">
+    <div className="text-white font-[Poppins] bg-black md:px-10 lg:px-16 w-full">
       <Navbar />
-      <main className="pt-32 px-6 sm:px-10 lg:px-20">
+      <main className="pt-20 md:pt-32 sm:px-6 md:px-10 lg:px-16">
         <Header />
         {/* <About /> */}
         <Experience />
@@ -20,6 +21,7 @@ function App() {
         <Projects />
         <Education />
         <Achievements />
+        <Contact />
       </main>
     </div>
   );
